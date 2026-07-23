@@ -54,3 +54,40 @@ body {
     color: #666;
     font-size: 14px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.etiquetas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.etiquetas label {
+    color: var(--negro);
+    font-weight: 500;
+}
+
+.olvido {
+    color: var(--dorado);
+    text-decoration: none;
+    font-size: 12px;
+    transition: var(--transicion);
+}
+
+.olvido:hover {
+    text-decoration: underline;
+    color: #a8851f;
+}
