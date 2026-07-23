@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colores que uso en todo el login, así lo cambio una sola vez */
+:root {
+    --negro: #161616;
+    --madera: #5e3a22;
+    --dorado: #c9a227;
+    --blanco: #f5f5f5;
+    --gris: #eaeaea;
+    --sombra: 0 6px 20px rgba(22, 22, 22, 0.12);
+    --transicion: all 0.25s ease;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    /* degradado cálido, combina con la carnicería */
+    background: linear-gradient(135deg, var(--gris) 0%, #d9cdbf 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--negro);
+}
