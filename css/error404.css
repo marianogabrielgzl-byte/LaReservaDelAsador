@@ -28,7 +28,7 @@ body {
 }
 
 /*logo */
-.contenedor-logo {
+/* .contenedor-logo {
     margin-bottom: 20px;
 }
 
@@ -37,9 +37,9 @@ body {
     height: auto;
 }
 
-
+ */
 .caja-404 h1 {
-    font-size: 70px;
+    font-size: 220px;
     color: var(--color-madera);
     margin: 0;
 }
