@@ -133,3 +133,28 @@ form {
 .input-con-icono input::placeholder {
     color: #aaa;
 }
+
+.boton-entrar {
+    background-color: var(--madera);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: var(--transicion);
+    margin-top: 4px;
+}
+
+.boton-entrar:hover {
+    background-color: #4a2d1a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(94, 58, 34, 0.3);
+}
+
+.boton-entrar:active {
+    transform: translateY(0);
+}
