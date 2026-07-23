@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +8,62 @@
     <meta name="keywords" content="carne,wagyu,premium,argentina, cortes de carnes"/>
     <link rel="stylesheet" href="../css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <title>inicio de sesion</title>
+    <!-- Agregué esto para que se vean los iconos de sobre y candado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Inicio de sesion</title>
 </head>
 <body>
-    <div class="pagina-login">
-        <div class="encabezado-modal">
+    <div class="caja-login">
+        <div class="titulo-login">
             <h1>Inicia Sesion</h1>
             <p>Ingrese su cuenta para continuar</p>
         </div>
+
         <form>
-            <div class="grupo-campo">
+            <div class="campo">
                 <label for="email">Correo electronico</label>
-                <div class="contenedor-campo">
+                <div class="input-con-icono">
                     <i class="far fa-envelope icono"></i>
                     <input type="email" id="email" name="email" placeholder="nombre@gmail.com" required minlength="7" maxlength="40">
                 </div>
             </div>
-            <div class="grupo-campo">
-                <div class="fila-etiquetas">
+
+            <div class="campo">
+                <div class="etiquetas">
                     <label for="password">Contraseña</label>
-                    <a href="#" class="enlace-olvido">¿Olvidaste tu contraseña?</a>
+                    <a href="#" class="olvido">¿Olvidaste tu contraseña?</a>
                 </div>
-                <div class="contenedor-campo">
+                <div class="input-con-icono">
                     <i class="fas fa-lock icono"></i>
                     <input type="password" id="password" name="password" placeholder="Introduzca su contraseña" required minlength="3" maxlength="15">
                 </div>
             </div>
-            <button type="submit" class="boton-iniciar-sesion">Iniciar sesión</button>
+
+            <button type="submit" class="boton-entrar">Iniciar sesión</button>
         </form>
+
         <div class="separador">
             <span>o</span>
         </div>
-        <div class="redes-sociales" >
-          <a href="./error404.html">
-              <button class="google">
-                <img src="" alt="Logo de Google" width="18">
-                Continuar con Google
-            </button>
-          </a>
+
+        <div class="redes">
+            <a href="./error404.html">
+                <button class="boton-red">
+                    <img src="../assets/img/Made by Google.png" alt="Logo de Google" width="18">
+                    Continuar con Google
+                </button>
+            </a>
             
-           <a href="./error404.html">
-             <button class="boton-red-social boton-facebook">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Logo de Facebook" width="18">
-                Continuar con Facebook
-            </button>
-           </a>
+            <a href="./error404.html">
+                <button class="boton-red facebook">
+                    <img src="../assets/img/facelogo.png" alt="Logo de Facebook" width="18">
+                    Continuar con Facebook
+                </button>
+            </a>
         </div>
 
-        <div class="pie-modal">
-            <p>¿No tienes cuenta? <a href="./registro.html" class="enlace-registro">Regístrate</a></p>
+        <div class="pie-login">
+            <p>¿No tienes cuenta? <a href="./registro.html" class="registro">Regístrate</a></p>
         </div>    
     </div>
 </body>
