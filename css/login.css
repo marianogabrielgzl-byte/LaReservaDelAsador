@@ -158,3 +158,84 @@ form {
 .boton-entrar:active {
     transform: translateY(0);
 }
+ 
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+    color: #999;
+    font-size: 13px;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+.boton-red {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--negro);
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+
+.boton-red:hover {
+    background-color: var(--gris);
+    border-color: #ccc;
+}
+
+.pie-login {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.registro {
+    color: var(--dorado);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transicion);
+}
+
+.registro:hover {
+    text-decoration: underline;
+    color: #a8851f;
+}
+
+/* ajustes para que se vea bien en celulares */
+@media (max-width: 480px) {
+    .caja-login {
+        padding: 32px 24px;
+    }
+
+    .titulo-login h1 {
+        font-size: 24px;
+    }
+}
