@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* colores que uso en todo el login, así lo cambio una sola vez */
 :root {
     --negro: #161616;
     --madera: #5e3a22;
@@ -90,4 +89,47 @@ form {
 .olvido:hover {
     text-decoration: underline;
     color: #a8851f;
+}
+
+
+.input-con-icono {
+    position: relative;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: var(--transicion);
+}
+
+.input-con-icono:focus-within {
+    border-color: var(--dorado);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
+}
+
+.icono {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+    transition: var(--transicion);
+}
+
+.input-con-icono:focus-within .icono {
+    color: var(--dorado);
+}
+
+.input-con-icono input {
+    width: 100%;
+    padding: 12px 14px 12px 40px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--negro);
+}
+
+.input-con-icono input::placeholder {
+    color: #aaa;
 }
