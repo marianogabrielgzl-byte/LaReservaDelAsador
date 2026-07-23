@@ -17,7 +17,6 @@
 
 body {
     font-family: 'Cinzel', serif;
-    /* degradado cálido, combina con la carnicería */
     background: linear-gradient(135deg, var(--gris) 0%, #d9cdbf 100%);
     min-height: 100vh;
     display: flex;
@@ -25,4 +24,33 @@ body {
     justify-content: center;
     padding: 20px;
     color: var(--negro);
+}
+
+.caja-login {
+    background-color: var(--blanco);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+    border-top: 4px solid var(--dorado);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.titulo-login {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.titulo-login h1 {
+    color: var(--madera);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.titulo-login p {
+    color: #666;
+    font-size: 14px;
 }
