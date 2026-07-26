@@ -5,16 +5,19 @@
     --color-blanco: #f5f5f5;
     --color-gris: #eaeaea;
     --color-fondo-pagina: #e8e2d8;
+    /* NUEVO: definimos la fuente */
+    --fuente-titulos: 'Cinzel', serif;
+    --fuente-cuerpo: 'Segoe UI', Arial, sans-serif;
 }
 
 body {
     background-color: var(--color-fondo-pagina);
+    font-family: var(--fuente-cuerpo); /* ACTUALIZADO */
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    font-family: sans-serif;
 }
 
 .card {
