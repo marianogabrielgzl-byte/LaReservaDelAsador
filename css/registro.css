@@ -12,7 +12,13 @@
 
 body {
     background-color: var(--color-fondo-pagina);
-    font-family: var(--fuente-cuerpo); /* ACTUALIZADO */
+    background-image: url('../assets/img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: var(--fuente-cuerpo);
     min-height: 100vh;
     display: flex;
     align-items: center;
