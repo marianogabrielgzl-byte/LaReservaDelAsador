@@ -49,3 +49,70 @@ body {
     text-transform: uppercase;
     margin-bottom: 0.4rem;
 }
+.entrada {
+    background-color: transparent;
+    border-color: var(--color-gris);
+    color: var(--color-negro);
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem 0.75rem 2.2rem;
+}
+
+.entrada:focus {
+    box-shadow: 0 0 0 0.25rem rgba(201, 162, 39, 0.15);
+    border-color: var(--color-dorado);
+    background-color: #fff;
+}
+
+.input-group-text {
+    color: #999;
+    border-color: var(--color-gris);
+    background: transparent;
+}
+
+.boton-principal {
+    background-color: var(--color-madera);
+    color: var(--color-blanco);
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.85rem;
+    transition: background 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #4a2e1a;
+}
+
+.boton-social {
+    border: 1px solid var(--color-gris);
+    background-color: #fff;
+    color: var(--color-negro);
+    font-size: 0.85rem;
+    font-weight: 400;
+    transition: background 0.3s;
+}
+
+.boton-social:hover {
+    background-color: var(--color-gris);
+}
+
+.enlace {
+    color: var(--color-dorado);
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+    color: #b08e1f;
+}
+
+.texto-pie {
+    font-size: 0.8rem;
+    color: #666;
+}
