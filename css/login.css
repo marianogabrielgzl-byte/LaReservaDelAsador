@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--color-fondo-pagina);
-    background-image: url('../assets/img/fondo.png');
+    background-image: url('../assets/img/fondodelogin.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
