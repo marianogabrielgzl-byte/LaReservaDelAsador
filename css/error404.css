@@ -1,0 +1,75 @@
+/*  Paleta de colores  */
+:root {
+    --color-negro: #161616;
+    --color-madera: #5e3a22;
+    --color-dorado: #c9a227;
+    --color-blanco: #f5f5f5;
+    --color-gris: #eaeaea;
+}
+
+body {
+    background-color: var(--color-gris);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.caja-404 {
+    background-color: var(--color-blanco);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*logo */
+.contenedor-logo {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 120px; 
+    height: auto;
+}
+
+
+.caja-404 h1 {
+    font-size: 70px;
+    color: var(--color-madera);
+    margin: 0;
+}
+
+.caja-404 h2 {
+    color: var(--color-negro);
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.caja-404 p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+.boton-volver {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.boton-volver:hover {
+    background-color: var(--color-madera);
+}
