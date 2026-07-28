@@ -15,6 +15,22 @@
 }
 
 body {
+    background-color: var(--color-fondo-pagina);
+    background-image: url('../assets/img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: var(--fuente-cuerpo);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* body {
     font-family: 'Cinzel', serif;
     background: linear-gradient(135deg, var(--gris) 0%, #d9cdbf 100%);
     min-height: 100vh;
@@ -23,7 +39,7 @@ body {
     justify-content: center;
     padding: 20px;
     color: var(--negro);
-}
+} */
 
 .caja-login {
     background-color: var(--blanco);
