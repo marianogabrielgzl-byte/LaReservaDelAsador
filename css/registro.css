@@ -1,0 +1,127 @@
+:root {
+    --color-negro: #161616;
+    --color-madera: #5e3a22;
+    --color-dorado: #c9a227;
+    --color-blanco: #f5f5f5;
+    --color-gris: #eaeaea;
+    --color-fondo-pagina: #e8e2d8;
+    /* NUEVO: definimos la fuente */
+    --fuente-titulos: 'Cinzel', serif;
+    --fuente-cuerpo: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo-pagina);
+    background-image: url('../assets/img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: var(--fuente-cuerpo);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.card {
+    background-color: var(--color-blanco);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.titulo {
+    color: var(--color-madera);
+    font-weight: 600;
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    color: #888;
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.etiqueta {
+    color: #555;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+.entrada {
+    background-color: transparent;
+    border-color: var(--color-gris);
+    color: var(--color-negro);
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem 0.75rem 2.2rem;
+}
+
+.entrada:focus {
+    box-shadow: 0 0 0 0.25rem rgba(201, 162, 39, 0.15);
+    border-color: var(--color-dorado);
+    background-color: #fff;
+}
+
+.input-group-text {
+    color: #999;
+    border-color: var(--color-gris);
+    background: transparent;
+}
+
+.boton-principal {
+    background-color: var(--color-madera);
+    color: var(--color-blanco);
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.85rem;
+    transition: background 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #4a2e1a;
+}
+
+.boton-social {
+    border: 1px solid var(--color-gris);
+    background-color: #fff;
+    color: var(--color-negro);
+    font-size: 0.85rem;
+    font-weight: 400;
+    transition: background 0.3s;
+}
+
+.boton-social:hover {
+    background-color: var(--color-gris);
+}
+
+.enlace {
+    color: var(--color-dorado);
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+    color: #b08e1f;
+}
+
+.texto-pie {
+    font-size: 0.8rem;
+    color: #666;
+}
