@@ -238,6 +238,30 @@ body{
     color: #cfcfcf;
     line-height: 1.8;
 }
+.beneficio-card{
+    padding: 30px;
+    transition: .3s;
+}
+
+.beneficio-card:hover{
+    transform: translateY(-10px);
+}
+
+.beneficio-icono{
+    font-size: 55px;
+    color: #C9A227;
+    margin-bottom: 20px;
+}
+
+.beneficio-titulo{
+    color: #F5F5F5;
+    margin-bottom: 15px;
+}
+
+.beneficio-texto{
+    color: #cfcfcf;
+    line-height: 1.8;
+}
 .footer-reserva{
     background-color: #111;
     padding: 70px 0 20px;
