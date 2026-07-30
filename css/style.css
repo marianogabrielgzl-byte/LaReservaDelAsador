@@ -70,7 +70,7 @@
     .hero-content p{
         font-size: 1rem;
     }
-^ }
+ }
 
 .navbar{
     background-color: var(--color-negro);
@@ -134,3 +134,4 @@
 .parte3 .bi:hover{
     color: var(--color-dorado);
 }
+
