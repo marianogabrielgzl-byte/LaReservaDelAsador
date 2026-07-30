@@ -21,3 +21,48 @@ h1, h2, h3, h4{
     font-weight: 700;
     color: var(--negro);
 }
+.btn-autoline-light:hover{
+background-color: var(--dorado);
+color: var(--negro);
+}
+p{
+    font-family: var(--font-cuerpo);
+}
+.description{
+    font-family: var(--font-cuerpo);
+}
+.detalle{
+    background-color: var(--blanco);
+    border-radius: 12px;
+    padding: 50px;
+    margin: 30px auto;
+    box-shadow: var(--sombra);
+}
+.precio{
+    color: var(--dorado);
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.btn-comprar{
+    background-color: var(--madera);
+    border: 2px solid var(--madera);
+    color: var(--blanco);
+    font-family: var(--font-cuerpo);
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.btn-comprar:hover {
+    background-color: var(--negro);
+    border-color: var(--negro);
+    color: var(--dorado);
+}
+.opiniones {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-left: 5px solid var(--madera);
+    border-radius: 8px;
+}
