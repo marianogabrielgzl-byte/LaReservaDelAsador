@@ -92,4 +92,53 @@ main {
 
 textarea.entrada {
     resize: none;
+} 
+
+.boton-principal {
+    background-color: var(--color-madera);
+    color: var(--color-blanco);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.85rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.boton-principal:hover {
+    background-color: #4a2e1a;
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(94, 58, 34, 0.4);
+}
+
+.boton-whatsapp {
+    background-color: var(--color-madera);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.boton-whatsapp:hover {
+    background-color: #4a2e1a;
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(94, 58, 34, 0.4);
+}
+
+.enlace-correo {
+    color: var(--color-dorado);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    word-break: break-all;
+}
+
+.enlace-correo:hover {
+    color: #a8851f;
 }
