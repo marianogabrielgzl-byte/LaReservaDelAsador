@@ -1,19 +1,444 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda de carne"/>
-    <meta name="author" content="Mariano Gonzalez" />
-    <meta name="keywords" content="carne,wagyu,premium,argentina"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tienda de carne" />
+    <meta name="author" content="Mariano Gonzalez, Maximo Paz, Matias Romano" />
+    <meta name="keywords" content="carne,wagyu,premium,argentina" />
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>La Reserva Del asador</title>
 </head>
+
 <body>
-<header></header>
-<main></main>
-<footer></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <section class="parte1 flex-grow-1">
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-2 list-unstyled">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white  text-decoration-none" aria-current="page"
+                                        href="./index.html">INICIO</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control form-control-sm" type="search"
+                                    placeholder="buscar productos..." aria-label="search" />
+                                <button class="btn btn-outline-success" type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="parte2 d-flex flex-grow-1 justify-content-center py-2">
+                        <a href="." class="text-center mx-auto d-none d-lg-block">
+                            <img src="../assets/img/logo.png" alt="reserva del asador" width="350">
+                        </a>
+                    </section>
+                    <section
+                        class="parte3 d-flex flex-grow-1 flex-column flex-lg-row align-items-lg-center justify-content-lg-end ms-lg-auto gap-3">
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
+                            <a class="nav-link active text-white text-decoration-none"
+                                href="./pages/Nosotros.html">NOSOTROS</a>
+                            <a class="nav-link active text-white text-decoration-none"
+                                href="./pages/Contacto.html">CONTACTO</a>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <a class="nav-link text-white" href="./pages/login.html"><i class="bi bi-person"></i></a>
+                            <a class="nav-link text-white" href="./pages/carrito.html"><i class="bi bi-cart3"></i></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <video autoplay muted loop playsinline>
+                <source src="assets/img/hero.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1> EL ARTE DEL ASADO</h1>
+                <p>Cortes seleccionados, calidad excepcional y el auténtico sabor argentino</p>
+            </div>
+        </section>
+        <section class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-white"> Promociones</h2>
+                <p class="text-secondary">Aprovechá nuestras mejores ofertas.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card producto h-100 shadow-sm">
+                        <span class="badge bg-danger oferta">10% OFF</span>
+                        <img src="assets/img/asado-x7-et-b4302d19a2f95bd7f217579442209513-480-0.webp"
+                            class="card-img-top" alt="Asado">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Asado Premium</h5>
+                            <p class="card-text text-secondary">
+                                Corte ideal para compartir en familia.
+                            </p>
+                            <p class="text-decoration-line-through text-secondary mb-0">
+                                $18.500
+                            </p>
+                            <h4 class="text-danger fw-bold mb-3">
+                                $15.900/kg
+                            </h4>
+                            <a href="./pages/error404.html" class="btn btn-dark mt-auto">
+                                Ver producto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card producto h-100 shadow-sm">
+                        <span class="badge bg-danger oferta">15% OFF</span>
+                        <img src="assets/img/punta-vacio-e4ce3d15fbaf72975f17579475606417-480-0.webp"
+                            class="card-img-top" alt="Vacío">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Vacío</h5>
+                            <p class="card-text text-secondary">
+                                Jugoso y tierno para la parrilla.
+                            </p>
+                            <p class="text-decoration-line-through text-secondary mb-0">
+                                $20.000
+                            </p>
+                            <h4 class="text-danger fw-bold mb-3">
+                                $17.000/kg
+                            </h4>
+                            <a href="./pages/detalledeProducto.html" class="btn btn-dark mt-auto">
+                                Ver producto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card producto h-100 shadow-sm">
+                        <span class="badge bg-danger oferta">20% OFF</span>
+                        <img src="assets/img/bife-angosto-et-2b1f290b19474d147717579452114239-480-0.webp"
+                            class="card-img-top" alt="Bife">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Bife de Chorizo</h5>
+                            <p class="card-text text-secondary">
+                                Uno de los cortes más elegidos.
+                            </p>
+                            <p class="text-decoration-line-through text-secondary mb-0">
+                                $22.000
+                            </p>
+                            <h4 class="text-danger fw-bold mb-3">
+                                $17.600/kg
+                            </h4>
+                            <a href="./pages/error404.html" class="btn btn-dark mt-auto">
+                                Ver producto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card producto h-100 shadow-sm">
+                        <span class="badge bg-danger oferta">12% OFF</span>
+                        <img src="assets/img/matambre-et-2850015b5b3d0ee9ce17579472770587-480-0.webp"
+                            class="card-img-top" alt="Matambre">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Matambre</h5>
+                            <p class="card-text text-secondary">
+                                Perfecto para la parrilla.
+                            </p>
+                            <p class="text-decoration-line-through text-secondary mb-0">
+                                $19.500
+                            </p>
+                            <h4 class="text-danger fw-bold mb-3">
+                                $17.100/kg
+                            </h4>
+                            <a href="pages/error404.html" class="btn btn-dark mt-auto">
+                                Ver producto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-white"> Cortes Vacunos</h2>
+                    <p class="text-secondary">Los cortes más elegidos para una buena parrilla.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card producto h-100 shadow-sm">
+                            <img src="assets/img/entrecot.webp" class="card-img-top" alt="Asado">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Entrecote</h5>
+                                <p class="card-text text-secondary">
+                                    Corte Premiun.
+                                </p>
+                                <a href="./pages/asado.html" class="btn btn-dark mt-auto">
+                                    Ver producto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card producto h-100 shadow-sm">
+                            <img src="assets/img/tomahawk.webp" class="card-img-top" alt="Vacío">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Tomahawk</h5>
+                                <p class="card-text text-secondary">
+                                    Tierno y jugoso, ideal para la parrilla.
+                                </p>
+                                <a href="./pages/detalledeProducto1.html" class="btn btn-dark mt-auto">
+                                    Ver producto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card producto h-100 shadow-sm">
+                            <img src="assets/img/ojo de fibe.webp" class="card-img-top" alt="Bife">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Ojo de bife</h5>
+                                <p class="card-text text-secondary">
+                                    Un clasico.
+                                </p>
+                                <a href="./pages/bife.html" class="btn btn-dark mt-auto">
+                                    Ver producto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card producto h-100 shadow-sm">
+                            <img src="assets/img/entraña.webp" class="card-img-top" alt="Matambre">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Entraña</h5>
+                                <p class="card-text text-secondary">
+                                    Vuelta y vuelta.
+                                </p>
+                                <a href="./pages/matambr" class="btn btn-dark mt-auto">
+                                    Ver producto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="container py-5">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-white">Parrilla</h2>
+                        <p class="text-secondary">
+                            Todo lo necesario para disfrutar un buen asado argentino.
+                        </p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card producto h-100 shadow-sm">
+                                <img src="assets/img/Gemini_Generated_Image_dvu68edvu68edvu6.png"
+                                    class="card-img-top imagen-producto" alt="Chorizo">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="fw-bold">
+                                        Chorizo Criollo
+                                    </h5>
+                                    <p class="text-secondary">
+                                        Sabor tradicional para arrancar la parrilla.
+                                    </p>
+                                    <a href="assets/img/Gemini_Generated_Image_dvu68edvu68edvu6.png"
+                                        class="btn btn-dark mt-auto">
+                                        Ver producto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card producto h-100 shadow-sm">
+                                <img src="assets/img/Morcilla.png" class="card-img-top imagen-producto" alt="Morcilla">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="fw-bold">
+                                        Morcilla
+                                    </h5>
+                                    <p class="text-secondary">
+                                        Un clásico infaltable de la parrilla argentina.
+                                    </p>
+                                    <a href="./pages/detalledeProducto2.html" class="btn btn-dark mt-auto">
+                                        Ver producto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card producto h-100 shadow-sm">
+                                <img src="assets/img/provoleta.png" class="card-img-top imagen-producto"
+                                    alt="Provoleta">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="fw-bold">
+                                        Provoleta
+                                    </h5>
+                                    <p class="text-secondary">
+                                        Queso fundido ideal para acompañar el asado.
+                                    </p>
+                                    <a href="./pages/provoleta.html" class="btn btn-dark mt-auto">
+                                        Ver producto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card producto h-100 shadow-sm">
+                                <img src="assets/img/molleja.jpg" class="card-img-top imagen-producto" alt="Molleja">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="fw-bold">
+                                        Mollejas
+                                    </h5>
+                                    <p class="text-secondary">
+                                        Un corte gourmet para los amantes del asado.
+                                    </p>
+                                    <a href="./pages/molleja.html" class="btn btn-dark mt-auto">
+                                        Ver producto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="publicidades">
+                        <div class="publicidad">
+                            <img src="assets/img/Publicidad.jpg" alt="Promo asado">
+                            <div class="publicidad-texto">
+                                <a href="#" class="btn btn-light">
+                                    Aprovechar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="publicidad">
+                            <img src="assets/img/Publicidad Envíos a domicilio.jpg" alt="Envíos">
+                            <div class="publicidad-texto">
+                                <a href="#" class="btn btn-light">
+                                    Pedir ahora
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="calidad-section">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-4 mb-4">
+                            <div class="beneficio-card">
+                                <div class="beneficio-icono">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <h3 class="beneficio-titulo">
+                                    Calidad Premium
+                                </h3>
+                                <p class="beneficio-texto">
+                                    Seleccionamos los mejores cortes para garantizar frescura y sabor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="beneficio-card">
+                                <div class="beneficio-icono">
+                                    <i class="bi bi-fire"></i>
+                                </div>
+                                <h3 class="beneficio-titulo">
+                                    Pasión Parrillera
+                                </h3>
+                                <p class="beneficio-texto">
+                                    Cortes ideales para disfrutar del auténtico asado argentino.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="beneficio-card">
+                                <div class="beneficio-icono">
+                                    <i class="bi bi-truck"></i>
+                                </div>
+                                <h3 class="beneficio-titulo">
+                                    Envíos Rápidos
+                                </h3>
+                                <p class="beneficio-texto">
+                                    Llevamos tus pedidos frescos hasta la puerta de tu casa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+        <footer class="footer-reserva">
+    <div class="container">
+        <div class="row gy-5 text-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <img src="./assets/img/logo.png"
+                     alt="Logo La Reserva del Asador"
+                     class="logo-footer">
+                <p class="footer-descripcion">
+                    Tradición, calidad y pasión por el auténtico asado argentino.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Cortes Vacunos</a></li>
+                    <li><a href="#">Parrilla</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4">
+                <h4>Contacto</h4>
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    San Miguel de Tucumán
+                </p>
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    (381) 123-4567
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    contacto@lareservadelasador.com
+                </p>
+                <div class="redes">
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            © 2026 La Reserva del Asador | Todos los derechos reservados.
+        </p>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
