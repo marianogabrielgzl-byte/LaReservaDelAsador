@@ -69,3 +69,27 @@ main {
     text-transform: uppercase;
     margin-bottom: 0.4rem;
 }
+.entrada {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-blanco);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.entrada::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.entrada:focus {
+    box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.25);
+    border-color: var(--color-dorado);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-blanco);
+}
+
+textarea.entrada {
+    resize: none;
+}
