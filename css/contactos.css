@@ -17,68 +17,82 @@ body {
     background-attachment: fixed;
     font-family: var(--fuente-principal);
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.card {
-    background-color: rgba(255, 246, 237, 0.25); 
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-principal {
+    width: 100%;
+}
+
+.card-login {
+    background-color: rgba(22, 22, 22, 0.75); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    border: 1px solid rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(201, 162, 39, 0.3); 
 }
 
-.titulo {
-    color: var(--color-madera);
+.titulo-contacto {
+    color: var(--color-dorado);
     font-weight: 700;
     font-size: 1.8rem;
     letter-spacing: 1px;
-    margin-bottom: 0.2rem;
     text-transform: uppercase;
 }
 
-.subtitulo {
-    color: var(--color-negro);
-    font-size: 0.75rem;
+.subtitulo-contacto {
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+}
+
+.texto-descriptivo {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
     font-weight: 500;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
 .etiqueta {
-    color: var(--color-negro);
+    color: var(--color-blanco);
     font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 0.4rem;
 }
-
-.input-group-text {
-    color: var(--color-madera);
-    border-color: var(--color-gris);
-    background: transparent;
-}
-
 .entrada {
-    background-color: transparent;
-    border-color: var(--color-gris);
-    color: var(--color-negro);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-blanco);
     font-size: 0.9rem;
     font-weight: 500;
     padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.entrada::placeholder {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .entrada:focus {
-    box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.25);
     border-color: var(--color-dorado);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-blanco);
 }
+
+textarea.entrada {
+    resize: none;
+} 
 
 .boton-principal {
     background-color: var(--color-madera);
@@ -97,34 +111,34 @@ body {
     background-color: #4a2e1a;
     color: var(--color-blanco);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(94, 58, 34, 0.3);
+    box-shadow: 0 5px 15px rgba(94, 58, 34, 0.4);
 }
 
-.boton-social {
-    border: 1px solid var(--color-gris);
-    background-color: #fff;
-    color: var(--color-negro);
+.boton-whatsapp {
+    background-color: var(--color-madera);
+    color: var(--color-blanco);
+    border: none;
     font-size: 0.85rem;
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-.boton-social:hover {
-    background-color: var(--color-gris);
-    transform: translateY(-1px);
+.boton-whatsapp:hover {
+    background-color: #4a2e1a;
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(94, 58, 34, 0.4);
 }
 
-.enlace {
+.enlace-correo {
     color: var(--color-dorado);
     font-weight: 700;
-    font-size: 0.8rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
     transition: color 0.3s ease;
+    word-break: break-all;
 }
 
-.enlace:hover {
-    color: var(--color-dorado);
+.enlace-correo:hover {
+    color: #a8851f;
 }
