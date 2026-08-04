@@ -73,3 +73,14 @@ color: var(--madera);
 .Nosotros .parte3 h3{
     color: var(--dorado);
 }
+.Nosotros .parte3 .border-bottom{
+    border-color: var(--dorado);
+}
+.Nosotros .parte3 .lista1{
+    padding-left:0;
+}
+.Nosotros .parte3 .item1::before{
+    color: var(--dorado);
+    font-weight: bold;
+    margin-right: 8px;
+}
