@@ -1,4 +1,7 @@
 
+ body{
+    background-color: #161616;
+ }
  
  .hero-cortes{
     position: relative;
@@ -40,7 +43,8 @@
         font-size: 1rem;
     }
 
-}.titulo-seccion{
+}
+.titulo-seccion{
     font-family: "Cinzel", serif;
     color: #F5F5F5;
 }
