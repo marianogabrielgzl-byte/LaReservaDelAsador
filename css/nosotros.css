@@ -42,27 +42,42 @@ h1, h2, h3{
     margin-top: 2rem;
 }
 .Nosotros .parte2{
+  padding: 4rem 1rem;
+  background-color: var(--blanco);
+}
+.Nosotros .parte2 .row{
     display: flex;
-    justify-content: center;
+    align-items: stretch;
     gap: 2rem;
-    padding: 4rem 1rem;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 .Nosotros .parte2 .card {
     width: 100%;
-    max-width: 18rem;
     border: 2px solid var(--madera);
-    border-top: 4px solid var(--dorado);
+    border-top: 5px solid var(--dorado);
+    border-radius: 16px;
     box-shadow: var(--sombra);
     transition: var(--transicion);
     background-color: var(--negro);
     color: var(--blanco);
+    padding: 2.5rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
  .Nosotros .parte2 .card:hover {
     transform: translateY(-8px);
+    border-color: var(--dorado);
+    box-shadow: 0 8px 25px var(--sombra);
 }
 .Nosotros .parte2 .card h3{
 color: var(--madera);
+}
+.Nosotros .parte2 .card img{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem auto;
 }
 .Nosotros .parte3 {
     background-color: var(--negro);
@@ -84,3 +99,14 @@ color: var(--madera);
     font-weight: bold;
     margin-right: 8px;
 }
+@media (max-width:768px) {
+    .Nosotros .parte1 h2 {font-size: 2rem;}
+    .Nosotros .parte1 h3 {font-size: 1.2rem;}
+    .Nosotros .parte2 {gap: 1.5rem;}
+}
+@media (max-width:576px){
+.Nosotros .parte1 {padding: 2rem 1rem;}
+.Nosotros .parte1 h2 {font-size: 1.8rem;}
+.Nosotros .parte3 {padding: 2rem 1rem;}
+.Nosotros .parte2 .card {max-width: 100%;}
+} 
