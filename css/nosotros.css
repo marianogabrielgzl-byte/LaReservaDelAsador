@@ -1,0 +1,112 @@
+:root {
+    --negro: #161616;
+    --madera: #5e3a22;
+    --dorado: #c9a227;
+    --blanco: #f5f5f5;
+    --gris: #eaeaea;
+    --sombra: 0 6px 20px rgba(22, 22, 22, 0.12);
+    --transicion: all 0.25s ease;
+
+    --font-titulos: "cinzel", serif;
+    --font-cuerpo: "montserrat", sans-serif;
+}
+body{
+    font-family: var(--font-cuerpo);
+    background-color: var(--negro);
+    color: var(--blanco);
+    line-height: 2;
+}
+h1, h2, h3{
+    font-family: var(--font-titulos);
+    color: var(--madera);
+    font-weight: 700;
+}
+.Nosotros .parte1{
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: var(--negro);
+}
+.Nosotros .parte1 h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.Nosotros .parte1 h2{
+    color: var(--dorado);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.Nosotros .parte1 img{
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    margin-top: 2rem;
+}
+.Nosotros .parte2{
+  padding: 4rem 1rem;
+  background-color: var(--blanco);
+}
+.Nosotros .parte2 .row{
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    justify-content: center;
+}
+.Nosotros .parte2 .card {
+    width: 100%;
+    border: 2px solid var(--madera);
+    border-top: 5px solid var(--dorado);
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 2.5rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ .Nosotros .parte2 .card:hover {
+    transform: translateY(-8px);
+    border-color: var(--dorado);
+    box-shadow: 0 8px 25px var(--sombra);
+}
+.Nosotros .parte2 .card h3{
+color: var(--madera);
+}
+.Nosotros .parte2 .card img{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem auto;
+}
+.Nosotros .parte3 {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 4rem 1rem;
+}
+.Nosotros .parte3 h2,
+.Nosotros .parte3 h3{
+    color: var(--dorado);
+}
+.Nosotros .parte3 .border-bottom{
+    border-color: var(--dorado);
+}
+.Nosotros .parte3 .lista1{
+    padding-left:0;
+}
+.Nosotros .parte3 .item1::before{
+    color: var(--dorado);
+    font-weight: bold;
+    margin-right: 8px;
+}
+@media (max-width:768px) {
+    .Nosotros .parte1 h2 {font-size: 2rem;}
+    .Nosotros .parte1 h3 {font-size: 1.2rem;}
+    .Nosotros .parte2 {gap: 1.5rem;}
+}
+@media (max-width:576px){
+.Nosotros .parte1 {padding: 2rem 1rem;}
+.Nosotros .parte1 h2 {font-size: 1.8rem;}
+.Nosotros .parte3 {padding: 2rem 1rem;}
+.Nosotros .parte2 .card {max-width: 100%;}
+} 

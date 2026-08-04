@@ -1,0 +1,74 @@
+:root {
+    --negro: #161616;
+    --madera: #5e3a22;
+    --dorado: #c9a227;
+    --blanco: #f5f5f5;
+    --gris: #eaeaea;
+    --sombra: 0 6px 20px rgba(22, 22, 22, 0.12);
+    --transicion: all 0.25s ease;
+
+    --font-titulos: "cinzel", serif;
+    --font-cuerpo: "montserrat", sans-serif;
+}
+body{
+    background-color: var(--gris);
+    color: var(--negro);
+    font-family: var(--font-cuerpo);
+    font-weight: 400;
+}
+h1, h2, h3, h4{
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    color: var(--negro);
+}
+.btn-autoline-light:hover{
+background-color: var(--dorado);
+color: var(--negro);
+}
+p{
+    font-family: var(--font-cuerpo);
+}
+.description{
+    font-family: var(--font-cuerpo);
+}
+.detalle{
+    background-color: var(--blanco);
+    border-radius: 12px;
+    padding: 50px;
+    margin: 30px auto;
+    box-shadow: var(--sombra);
+}
+.precio{
+    color: var(--dorado);
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.btn-comprar{
+    background-color: var(--madera);
+    border: 2px solid var(--madera);
+    color: var(--blanco);
+    font-family: var(--font-cuerpo);
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.btn-comprar:hover {
+    background-color: var(--negro);
+    border-color: var(--negro);
+    color: var(--dorado);
+}
+.opiniones {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-left: 5px solid var(--madera);
+    border-radius: 8px;
+}
+.img2{
+    width: 500px ;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
