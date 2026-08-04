@@ -30,8 +30,7 @@ El proyecto cuenta con un diseño responsive, navegación intuitiva y una estruc
 ##  Tecnologías utilizadas
 
 - HTML5
-- CSS3
-- JavaScript
+- CSS
 - Bootstrap 5
 - Git
 - GitHub
