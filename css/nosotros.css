@@ -12,8 +12,8 @@
 }
 body{
     font-family: var(--font-cuerpo);
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: var(--negro);
+    color: var(--blanco);
     line-height: 2;
 }
 h1, h2, h3{
@@ -24,7 +24,7 @@ h1, h2, h3{
 .Nosotros .parte1{
     text-align: center;
     padding: 4rem 1rem;
-    background-color: var(--gris);
+    background-color: var(--negro);
 }
 .Nosotros .parte1 h3 {
     font-size: 1rem;
@@ -47,4 +47,29 @@ h1, h2, h3{
     gap: 2rem;
     padding: 4rem 1rem;
     flex-wrap: wrap;
+}
+.Nosotros .parte2 .card {
+    width: 100%;
+    max-width: 18rem;
+    border: 2px solid var(--madera);
+    border-top: 4px solid var(--dorado);
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+ .Nosotros .parte2 .card:hover {
+    transform: translateY(-8px);
+}
+.Nosotros .parte2 .card h3{
+color: var(--madera);
+}
+.Nosotros .parte3 {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 4rem 1rem;
+}
+.Nosotros .parte3 h2,
+.Nosotros .parte3 h3{
+    color: var(--dorado);
 }
